@@ -1,0 +1,13 @@
+.h4{
+    font-weight: bold;
+    font-size: 18px;
+    font: Inter;
+
+}
+.table{
+    text-align: left;
+}
+
+.espacio-vertical {
+    margin-bottom: 20px; /* Ajusta el valor según el espacio deseado */
+  }

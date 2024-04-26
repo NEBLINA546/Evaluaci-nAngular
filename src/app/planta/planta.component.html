@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Agregar enlaces a los archivos de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="espacio-vertical"></div>
+      <table class="col-8">
+        <thead>
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Nombre común</th>
+            <th class="h4">Nombre cientifico</th>
+            <th class="h4">Tipo</th>
+            <th class="h4">Altura máxima</th>
+            <th class="h4">Clima</th>
+            <th class="h4">Sustrato siembra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of plantas">
+            <td>
+              <dd>{{p.id}}</dd>
+            </td>
+            <td>
+              <dd>{{p.nombre_comun}}</dd>
+            </td>
+            <td>
+              <dd>{{p.nombre_cientifico}}</dd>
+            </td>
+            <td>
+              <dd>{{p.tipo}}</dd>
+            </td>
+            <td>
+              <dd>{{p.altura_maxima}}</dd>
+            </td>
+            <td>
+              <dd>{{p.clima}}</dd>
+            </td>
+            <td>
+              <dd>{{p.sustrato_siembra}}</dd>
+            </td>
+        </tr>
+          <!-- Puedes agregar más filas según sea necesario -->
+        </tbody>
+      </table>  
+  </div>
+</body>
+</html>
