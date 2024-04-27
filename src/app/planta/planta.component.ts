@@ -21,4 +21,18 @@ export class PlantaComponent implements OnInit {
     this.getPlantas();
   }
 
+  getTotalPlantasExterior(){
+    return this.plantas.filter(
+      planta => planta.tipo=="Exterior"
+      )
+    .length
+  }
+
+  getTotalPlantasInterior(){
+    return this.plantas.filter(
+      planta => planta.tipo=="Interior"
+      )
+    .length
+  }
+
 }

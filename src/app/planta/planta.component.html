@@ -25,7 +25,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let p of plantas">
-                        <td>
+            <td>
               <dd>{{p.id}}</dd>
             </td>
             <td>
@@ -50,7 +50,9 @@
           <!-- Puedes agregar más filas según sea necesario -->
         </tbody>
       </table>
-    </div>    
+    </div>
+    <p class="m-0">Total de plantas exterior: {{getTotalPlantasExterior()}}</p>
+    <p class="m-0">Total de plantas interior: {{getTotalPlantasInterior()}}</p>        
   </div>
 </body>
 </html>
