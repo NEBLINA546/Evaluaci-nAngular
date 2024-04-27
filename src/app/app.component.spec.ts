@@ -1,15 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { PlantaService } from './planta/planta.service';
+import { PlantaComponent } from './planta/planta.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
+      imports: [RouterTestingModule, HttpClientTestingModule],
+      providers: [PlantaService],
       declarations: [
-        AppComponent
+        AppComponent, PlantaComponent
       ],
     }).compileComponents();
   });
@@ -20,16 +22,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mynewapp'`, () => {
+  it(`should have as title 'Vivero El Otoño'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mynewapp');
+    expect(app.title).toEqual('Vivero El Otoño');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mynewapp');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Vivero El Otoño');
   });
 });
