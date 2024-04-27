@@ -6,25 +6,26 @@
   <title></title>
   <!-- Agregar enlaces a los archivos de Bootstrap -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="planta.component.css" rel="stylesheet">
 </head>
 <body>
   <div class="container-fluid">
-    <div class="espacio-vertical"></div>
-      <table class="col-8">
-        <thead>
+    <div class="col-12">
+      <table class="table">
+        <thead class="thead-dark">
           <tr>
-            <th class="h4">#</th>
-            <th class="h4">Nombre común</th>
-            <th class="h4">Nombre cientifico</th>
-            <th class="h4">Tipo</th>
-            <th class="h4">Altura máxima</th>
-            <th class="h4">Clima</th>
-            <th class="h4">Sustrato siembra</th>
+            <th scope="col">#</th>
+            <th scope="col">Nombre común</th>
+            <th scope="col">Nombre cientifico</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Altura máxima</th>
+            <th scope="col">Clima</th>
+            <th scope="col">Sustrato siembra</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let p of plantas">
-            <td>
+                        <td>
               <dd>{{p.id}}</dd>
             </td>
             <td>
@@ -48,7 +49,8 @@
         </tr>
           <!-- Puedes agregar más filas según sea necesario -->
         </tbody>
-      </table>  
+      </table>
+    </div>    
   </div>
 </body>
 </html>

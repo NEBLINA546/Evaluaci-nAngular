@@ -2,8 +2,12 @@
     font-weight: bold;
     font-size: 18px;
     font: Inter;
-
 }
+.container-fluid{
+    max-width: 95%; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
 .table{
     text-align: left;
 }

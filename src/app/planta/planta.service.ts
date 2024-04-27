@@ -8,7 +8,7 @@ import { Planta } from './planta';
   providedIn: 'root'
 })
 export class PlantaService {
-  private apiUrl = environment.baseUrl + 'plantas.json';
+  private apiUrl = environment.baseUrl;
   
   constructor(private http: HttpClient) { }
   

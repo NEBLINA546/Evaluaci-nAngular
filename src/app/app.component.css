@@ -2,3 +2,15 @@ h1 {
     font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.hr-container{
+    max-width: 95%; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+.custom-hr{
+    border: 2px solid #333; /* Grosor y color del borde */
+       
+}
+.full-widht-image{
+    width: 100%; /* Establecer el ancho al 100% */
+    max-height: 400px; /* Establecer la altura máxima deseada */
+}
